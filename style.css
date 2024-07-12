@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*hero-banner*/
+.hero-banner {
+  background: linear-gradient(270deg, #000000 1.5%, #02112E 30%);
+}
+
+.hero-banner .fmc-text {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 10px;
+  margin-top: 3px
+}
+
+.hero-banner .feb-unpad-text {
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 10px;
+  margin-top: -50px
+}
+
+
+.hero-banner .tombol {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -40px;
+  padding: 2%;
+}
+
+.hero-banner button {
+  width: 110px;
+  height: 47px;
+  border-radius: 6px;
+  border: none;
+  background: #FFF;
+  color: #060606;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  }
+
+.hero-banner button:hover {
+    color: #ffffff; 
+    background:#012B9D;
+  }
+
+.hero-banner button p {
+  margin: 0;
+}
+
+/*navbar*/
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+  
+ 
+}
+
+nav ul li {
+  display: flex;
+  flex-shrink: 1;
+  margin-right: 20px;
+  
+}
+
+nav ul li a {
+  color: black; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #012B9D; 
+  }
+
+
+
+
+
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  background-color: #fff;
+}
+
+/* Container */
+.logo img {
+  margin-top: 10px;
+  width: 60%;
+  height: auto;
+}
+
+/*about-us*/
+.about-us {
+  font-family: Plus Jakarta Sans;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.about-us h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.about-us p {
+  font-size: 18px;
+
+
+}
+
+.highlight {
+  color: #01359d;
+  font-family: "Plus Jakarta Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.aboutImage img {
+  max-width: 90%;
+  margin-top: 18%;
+  margin-left: 12%
+}
+
+
+
+
+
+.about-us .readmore-aboutus-button {
+  /*button*/
+  width: 110px;
+  height: 47px;
+  border-radius: 6px;
+  border: none;
+  background: #02112E;
+  color: #ffffff;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  }
+
+.about-us .readmore-aboutus-button:hover {
+    color: #012B9D; 
+    background:#ffffff;
+  }
+
+
+/*testimoni*/
+
+.testimoni .header-testimoni {
+  text-shadow: 0px 10px 40px #012B9D;
+  color: white;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+}
+
+/*pengurus*/
+.pengurus .header-pengurus {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-pengurus{
+  display: grid;
+  grid-template-columns: 0.7fr 1.03fr;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  
+  text-align: justify;
+  margin-top: -60px;
+}
+
+
+.pengurus-image img {
+  max-width: 75%;
+  border-radius: 10px;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  padding : 50px;
+  
+  
+}
+.pengurus-text {
+    flex: 2;
+  }
+.pengurus-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.pengurus-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -20px;
+  padding : 30px;
+   
+
+}
+.pengurus-buttons button{
+  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+
+/*footer*/
+.containerFooter .logoFooter{
+    margin-top: 10px;
+    width: 1000%;
+    height: auto;
+  }
+
+.containerFooter{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  
+}
+
+.highlightfooter{
+  font-weight: bold;
+  color:#012B9D ;
+}
+
+.col1 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
