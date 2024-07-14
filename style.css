@@ -4,9 +4,14 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+/* body{
+  margin: -8px;
+} */
+
 /*hero-banner*/
 .hero-banner {
   background: linear-gradient(270deg, #000000 1.5%, #02112E 30%);
+  
 }
 
 .hero-banner .fmc-text {
@@ -17,7 +22,7 @@
   font-weight: 800;
   line-height: normal;
   padding: 10px;
-  margin-top: 3px
+  margin-top: 3px;
 }
 
 .hero-banner .feb-unpad-text {
@@ -39,6 +44,21 @@
   padding: 2%;
 }
 
+.hero-banner .tombol .event-button{
+  background: none;
+  color: #FFF;
+  border-radius: 6px;
+  border:1px solid #fff;
+  stroke: #fff;
+}
+
+.hero-banner .tombol .event-button:hover{
+  color: #ffffff; 
+  background:#012B9D;
+  stroke: #ffffff;
+  border:none;
+}
+
 .hero-banner button {
   width: 110px;
   height: 47px;
@@ -55,18 +75,25 @@
   justify-content: center;
   cursor: pointer;
   transition: color 0.3s ease;
+  stroke: #000;
   }
 
 .hero-banner button:hover {
     color: #ffffff; 
     background:#012B9D;
-  }
+    stroke: #ffffff;
+}
 
 .hero-banner button p {
   margin: 0;
 }
 
 /*navbar*/
+
+header {
+  margin:10px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -74,16 +101,12 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
- 
-  
- 
 }
 
 nav ul li {
   display: flex;
   flex-shrink: 1;
   margin-right: 20px;
-  
 }
 
 nav ul li a {
@@ -91,31 +114,29 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  }
+}
 
-  nav ul li a:hover {
-    color: #012B9D; 
-  }
+nav ul li a:hover {
+  color: #012B9D; 
+}
 
+nav ul li #learn {
+  background: #012B9D;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+}
 
-
-
-
-/* Container */
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 5px;
   background-color: #fff;
+  margin-bottom: 5px;
 }
 
-/* Container */
-.logo img {
-  margin-top: 10px;
-  width: 60%;
-  height: auto;
-}
+
 
 /*about-us*/
 .about-us {
@@ -134,6 +155,11 @@ nav ul li a {
 .about-us h2 {
   font-size: 35px;
   font-weight: 800;
+  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about-us p {
@@ -151,26 +177,22 @@ nav ul li a {
   line-height: 35px;
 }
 
-.aboutImage img {
+.aboutImage img{
   max-width: 90%;
   margin-top: 18%;
-  margin-left: 12%
+  margin-left: 12%;
 }
 
-
-
-
-
-.about-us .readmore-aboutus-button {
+.about-us .readmore-button{
   /*button*/
   width: 110px;
   height: 47px;
   border-radius: 6px;
   border: none;
-  background: #02112E;
+  background: #85b4ff;
   color: #ffffff;
   font-family: Plus Jakarta Sans;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 500;
   text-align: center;
   display: flex;
@@ -181,13 +203,12 @@ nav ul li a {
   }
 
 .about-us .readmore-aboutus-button:hover {
-    color: #012B9D; 
-    background:#ffffff;
+    color: #000000; 
+    background:#0d00c7;
+    stroke: #000000;
   }
 
-
 /*testimoni*/
-
 .testimoni .header-testimoni {
   text-shadow: 0px 10px 40px #012B9D;
   color: white;
@@ -226,30 +247,32 @@ nav ul li a {
 
 
 .pengurus-image img {
-  max-width: 75%;
+  max-width: 100%;
   border-radius: 10px;
   justify-content: center;
   flex: 1;
   display: flex;
-  padding : 50px;
+  padding : 30px;
+  margin-bottom: -55px;
   
   
 }
 .pengurus-text {
     flex: 2;
   }
+
 .pengurus-text p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 20px;
   text-align: justify;
-  margin-top: -10px;
+  margin-top: -60px;
 }
 
 .pengurus-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: -20px;
+  margin-top: -10px;
   padding : 30px;
    
 
@@ -258,19 +281,26 @@ nav ul li a {
   background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
   color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   border: none;
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  width: 65%;
+  margin-left: 10px;
+  align-self: center;
+  
 }
 
 
 /*footer*/
-.containerFooter .logoFooter{
-    margin-top: 10px;
-    width: 1000%;
-    height: auto;
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer img{
+    width: 130.797px;
+    height: 35.984px;
   }
 
 .containerFooter{
@@ -281,20 +311,20 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   font-family: Plus Jakarta Sans;
-  font-size: 10px;
+  font-size: 18px;
   font-style: normal;
-  
+  padding: 10px;
 }
+
+.Footerteks{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
 
 .highlightfooter{
   font-weight: bold;
   color:#012B9D ;
-}
-
-.col1 {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
 }
